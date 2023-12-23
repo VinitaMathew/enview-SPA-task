@@ -1,0 +1,51 @@
+.dashboard-container {
+  background-color: #dbd8d863;
+  padding: 26px 16px;
+  min-height: 100vh;
+  .alerts-wrapper {
+    background-color: white;
+    border-radius: 5px;
+    max-width: 1024px;
+    margin-top: 10px;
+    .section-heading {
+      padding: 20px 0px 20px 32px;
+      border-bottom: 2px solid #b7b2b2;
+      margin: unset;
+    }
+    .alerts-list {
+      font-size: 18px;
+      list-style: none;
+      margin: unset;
+      padding: unset;
+      .alert-item {
+        display: flex;
+        align-items: center;
+        border-bottom: 2px solid #b7b2b2;
+        padding: 20px 0px 20px 32px;
+        place-content: space-between;
+        &:last-child {
+          border-bottom: none;
+        }
+        .content {
+          .alert-title {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 5px;
+          }
+        }
+        .alert-button {
+          margin-right: 16px;
+          cursor: pointer;
+          width: 182px;
+          height: 40px;
+          border-color: #c8c0c0;
+          border-radius: 6px;
+          color: grey;
+        }
+      }
+      .not-found-text {
+        padding: 20px 0px 20px 32px;
+      }
+    }
+  }
+}
